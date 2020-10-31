@@ -5,7 +5,7 @@
 // artwork on Redbubble at: https://github.com/rupertrussell/mind_blowing
 
 float angle;
-float radius = 800;
+float radius = 300;
 float change = 0;
 float speed = 1;
 void setup() {
@@ -42,8 +42,9 @@ void draw() {
   if (radius < 7) {
     println("radius = " + radius);
   }
-  if (radius < 5) {
-    save("mind_blowing.png");
+  if (radius < 5) { // Use this for extra large drawings
+    noLoop();
+    // save("mind_blowing.png");
     // exit();
   }
 }
